@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ag-guardian"
+version = "0.1.0"
+description = "A Google Antigravity SDK plugin for enriched, human-in-the-loop tool approvals."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0.0",
+    "httpx>=0.24.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]

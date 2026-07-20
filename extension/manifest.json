@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "AI Action Guardian",
+  "version": "1.0.0",
+  "description": "Human-in-the-loop trust layer for AI agents. Intercepts and explains every AI action before it executes.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "activeTab",
+    "notifications"
+  ],
+  "host_permissions": [
+    "ws://localhost/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AI Action Guardian",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

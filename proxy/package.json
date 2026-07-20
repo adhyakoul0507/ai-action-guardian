@@ -1,0 +1,24 @@
+{
+  "name": "ag-proxy",
+  "version": "1.0.0",
+  "description": "AI Action Guardian — MCP proxy that intercepts AI agent actions for human approval",
+  "main": "src/index.js",
+  "bin": {
+    "ag-proxy": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "demo": "node ../demo/mock-agent.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.9.0",
+    "chalk": "^4.1.2",
+    "diff": "^9.0.0",
+    "dotenv": "^17.4.2",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
