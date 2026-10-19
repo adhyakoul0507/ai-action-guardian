@@ -1,6 +1,5 @@
-# AI Action Guardian (Zero-Trust Agent Firewall)
+# AI Action Guardian 
 
-An enterprise-grade, zero-trust execution firewall that intercepts and secures autonomous AI agents using local Small Language Models (SLMs).
 
 ## Features
 - **Real-Time Execution Interception**: Uses a WebSocket proxy to silently scrape Chrome DevTools protocol memory and intercept AI shell execution threads.
